@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "uixler"
+version = "0.1.0"
+description = ""
+authors = ["Matanya Loewenthal <matanya@loewenthal.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.109.2"
+groqcloud = {url = "https://console.groqcloud.com/groqcloud-0.0.1-py3-none-any.whl"}
+black = "^24.2.0"
+requests = "^2.31.0"
+uvicorn = "^0.27.1"
+groq = "^0.3.0"
+httpx = "^0.26.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+
+[tool.poetry.scripts]
+start = "src.uixler:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
